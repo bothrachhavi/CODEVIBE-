@@ -1897,7 +1897,7 @@ select:focus {
 
 .mobile-nav .nav-link{
   width: 85%;
-  max-width: 320px;
+  max-width: 768px;
 
   display: flex;
   align-items: center;
