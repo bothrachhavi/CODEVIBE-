@@ -143,8 +143,8 @@ const SignUp = () => {
         localStorage.setItem(
           "userEmail",
           response.data.user.email ||
-            response.data.user.Email ||
-            ""
+          response.data.user.Email ||
+          ""
         );
 
         login(response.data.user, response.data.token);
@@ -156,8 +156,8 @@ const SignUp = () => {
 
       setResponseMsg(
         error.response?.data?.message ||
-          error.message ||
-          "Something went wrong"
+        error.message ||
+        "Something went wrong"
       );
     } finally {
       setLoading(false);
@@ -170,17 +170,17 @@ const SignUp = () => {
 
         {/* Left Image */}
         <div className="login-image">
-         <img
-  src={registerImage}
-  className="registerImage"
-  alt="Student Registration"
-  loading="lazy"
-  style={{
-    width: "100%",
-    maxWidth: "500px",
-    height: "auto",
-  }}
-/>
+          <img
+            src={registerImage}
+            className="registerImage"
+            alt="Student Registration"
+            loading="lazy"
+            style={{
+              width: "100%",
+              maxWidth: "500px",
+              height: "auto",
+            }}
+          />
         </div>
 
         {/* Signup Form */}
