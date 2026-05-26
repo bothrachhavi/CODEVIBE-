@@ -20,7 +20,7 @@ Last updated: 2026-05-26
 | 4 | [@namrarafique93-del](https://github.com/namrarafique93-del) | 78 | 9 | 4 | 4 |
 | 5 | [@divyagsharma2006-blip](https://github.com/divyagsharma2006-blip) | 65 | 5 | 4 | 3 |
 | 6 | [@Mahi-19-design](https://github.com/Mahi-19-design) | 65 | 5 | 4 | 3 |
-| 7 | [@vasheekhan](https://github.com/vasheekhan) | 55 | 5 | 3 | 3 |
+| 7 | [@vasheekhan](https://github.com/vasheekhan) | 60 | 5 | 3 | 4 |
 | 8 | [@codedbydollys10](https://github.com/codedbydollys10) | 51 | 13 | 2 | 1 |
 | 9 | [@Haritha-054](https://github.com/Haritha-054) | 49 | 2 | 2 | 5 |
 | 10 | [@riteshpatil9686-lgtm](https://github.com/riteshpatil9686-lgtm) | 47 | 11 | 2 | 1 |
