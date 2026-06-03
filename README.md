@@ -147,36 +147,28 @@ CodeVibe removes friction from the learning journey. Whether you're a complete b
     Copy the environment template and fill in your values:
 
 ```bash
+    # Unix/macOS
     cp server/.env.example server/.env
+
+    # Windows PowerShell
+    Copy-Item server/.env.example server/.env
 ```
 
    Then open `server/.env` and update at minimum:
-   - `MONGODB_URI` — your local or MongoDB Atlas connection string
+   - `PORT` — optional, default is `5002`
+   - `DB_URL` or `MONGODB_URI` — your local or MongoDB Atlas connection string
    - `JWT_SECRET` — generate a secure key by running:
 ```bash
    node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
 ```
+   - `ALLOWED_ORIGINS` — comma-separated frontend URLs allowed to access the API
+
 
    See [`server/.env.example`](./server/.env.example) for all available
    variables and their descriptions.
 
 ### Environment Setup
-To run the backend locally, you need to configure your environment variables.
-
-Navigate to the server/ directory.
-
-Copy the .env.example file and rename it to .env.
-
-Update the variables in .env as needed:
-
-PORT: The port your Express server will run on (Default: 5002).
-
-DB_URL / MONGODB_URI: Your MongoDB connection string.
-
-ALLOWED_ORIGINS: Comma-separated list of frontend URLs permitted to access the API.
-
-LEADERBOARD_API_URL & TOKEN: Credentials required if you are syncing GitHub stats with the backend.
-
+If you need to override defaults, copy `server/.env.example` to `server/.env` and update values such as `PORT`, `DB_URL`/`MONGODB_URI`, `JWT_SECRET`, and `ALLOWED_ORIGINS`.
 
 4. **Start the development servers**
    
@@ -221,7 +213,7 @@ CODEVIBE-/
 │   ├── routes/                     # API endpoints
 │   ├── models/                     # Database schemas
 │   ├── middleware/                 # Auth and validation middleware
-│   └── server.js                   # Server entry point
+│   └── index.js                    # Server entry point
 ├── CODE_OF_CONDUCT.md              # Community standards and behavior expectations
 ├── CONTRIBUTING.md                 # Contribution guidelines
 ├── LICENSE                         # MIT License
@@ -390,8 +382,8 @@ Thanks to all the amazing people who contribute to **CODEVIBE** 🚀
 
 ### Port Already in Use
 ```bash
-# Find process using port 5000
-lsof -i :5000
+# Find process using port 5002
+lsof -i :5002
 # Kill the process
 kill -9 <PID>
 ```
